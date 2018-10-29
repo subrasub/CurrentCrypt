@@ -14,7 +14,13 @@ app.get('/', function(req, res){
 	res.render('list.ejs')
 })
 
-app.get('/list', function(req, res){
+app.get('/search', function(req, res, body){
+	console.log("search page")
+	var name = req.params.name
+	res.render("search.ejs")
+})
+
+app.get('/results', function(req, res){
 	request(crypt, function(err, rep , body){
 		var list_crypt = JSON.parse(body)
 		console.log(list_crypt) 
