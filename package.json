@@ -1,0 +1,25 @@
+{
+  "name": "currentcrypt",
+  "version": "1.0.0",
+  "description": "cryptocurrency app",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subrasub/CurrentCrypt.git"
+  },
+  "author": "Subra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subrasub/CurrentCrypt/issues"
+  },
+  "homepage": "https://github.com/subrasub/CurrentCrypt#readme"
+}
