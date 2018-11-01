@@ -1,6 +1,33 @@
 <% include ./partials/header %>
 
-<h4>List</h4>
-<% console.log(data['data'][3])%>
+<% var id = Object.keys(data)%>
+
+<div class="row" style="background-color: #202328; text-align: center; color: white; font-weight: bold; font-size: 15px; vertical-align: middle; padding-top: 1%">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		SYMBOL			
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		NAME
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		PRICE
+	</div>
+	<hr style="color: black; height: 1px;">
+</div>
+
+<% for(let i=0; i<id.length; i++){ %>
+		<div class="row" style="text-align: center; padding-top: 1%;">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<%= data[id[i]]['symbol'] %>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<%= data[id[i]]['name'] %>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				&#x24; <%= data[id[i]]['quotes']['USD']['price'] %>
+			</div>
+		</div>
+		<hr style="color: black;">
+<% } %>
 
 <% include ./partials/footer %>
