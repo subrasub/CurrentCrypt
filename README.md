@@ -10,12 +10,12 @@ Built using Node.js, Express, and CoinMarketCap API
 
 
 ## Search for a cryptocurrency
-   ### Search for Bitcoin
-   ![Alt Text](https://media.giphy.com/media/5bgNvHiyuYwWjnIzhX/giphy.gif)
-   
-   ### Search for USD Coin
-   ![Alt Text](https://media.giphy.com/media/1BcwNt6T42xID7Y7KF/giphy.gif)
+ ## Search for a cryptocurrency
+| Search for Bitcoin      | Search for USD coin        |
+| ------------- |:---------------:|
+| ![Alt Text](https://media.giphy.com/media/5bgNvHiyuYwWjnIzhX/giphy.gif)| ![Alt Text](https://media.giphy.com/media/1BcwNt6T42xID7Y7KF/giphy.gif)|
   
+
 
 ## View the summary of top crypto-currencies
   ![Alt Text](https://media.giphy.com/media/5n5CG459wrZrTzswcK/giphy.gif)
