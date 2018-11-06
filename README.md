@@ -19,3 +19,6 @@ Built using Node.js, Express, and CoinMarketCap API
 
 ## View the summary of top crypto-currencies
   ![Alt Text](https://media.giphy.com/media/5n5CG459wrZrTzswcK/giphy.gif)
+
+## On-going work
+   Using React.js for front-end along with Redux for state management of the web-app 
