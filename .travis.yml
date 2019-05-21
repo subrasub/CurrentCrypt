@@ -1,0 +1,22 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t subrasub/currentcrypt -f Dockerfile.dev .
+  
+script:
+  - docker run subrasub/currentcrypt npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "currentcrypt"
+  env: "currentcrypt-env"
+  bucket_name: "elasticbeanstalk-us-east-2-160422832063"
+  bucket_path: "currentcrypt"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
